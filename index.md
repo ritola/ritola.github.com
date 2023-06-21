@@ -1,3 +1,3 @@
-# ritola.github.io
+# Tools
 
 - [Pomodoro timer](/pomodoro/)
