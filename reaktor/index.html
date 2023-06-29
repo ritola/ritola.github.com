@@ -1,53 +1,11 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <title>Reaktor</title>
-    <style>
-      body {
-          background-color: black;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 100vh;
-          width: 100%;
-          margin: 0;
-      }
-      #background {
-        background-color: black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100vh;
-      }
-      img {
-        width: 50%;
-      }
-    </style>
+  <style>
+    * {margin:0; padding: 0; color:white;}
+  </style>
 </head>
 <body>
-  <div id="background">
-    <img src="logo.svg">
-  </div>
+  <canvas id="background"></canvas>
+  <script src="bounce.js"></script>
 </body>
-
-<script>
-  var background = document.getElementById('background')
-
-  background.addEventListener("touch", clicked);
-  background.addEventListener("click", clicked);
-
-  function clicked() {
-    if (background.requestFullscreen) {
-      background.requestFullscreen();
-    } else if (background.mozRequestFullScreen) { // Firefox
-      background.mozRequestFullScreen();
-    } else if (background.webkitRequestFullscreen) { // Chrome, Safari and Opera
-      background.webkitRequestFullscreen();
-    } else if (background.msRequestFullscreen) { // IE/Edge
-      background.msRequestFullscreen();
-    }
-  }
-
-</script>
 </html>
