@@ -31,23 +31,4 @@
   </div>
 </body>
 
-<script>
-  var background = document.getElementById('background')
-
-  background.addEventListener("touch", clicked);
-  background.addEventListener("click", clicked);
-
-  function clicked() {
-    if (background.requestFullscreen) {
-      background.requestFullscreen();
-    } else if (background.mozRequestFullScreen) { // Firefox
-      background.mozRequestFullScreen();
-    } else if (background.webkitRequestFullscreen) { // Chrome, Safari and Opera
-      background.webkitRequestFullscreen();
-    } else if (background.msRequestFullscreen) { // IE/Edge
-      background.msRequestFullscreen();
-    }
-  }
-
-</script>
 </html>
