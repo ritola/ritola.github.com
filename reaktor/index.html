@@ -18,13 +18,7 @@
         align-items: center;
         width: 100%;
         height: 100vh;
-      }
-      #spooky {
-        background: center no-repeat url("skull.png");
-        background-size: cover;
-        width: 100%;
-        height: 100vh;
-        display: none;
+        display: flex;
       }
       img {
         width: 50%;
@@ -35,25 +29,6 @@
   <div id="logo">
     <img src="logo.svg">
   </div>
-  <div id="spooky">
-  </div>
-
-  <script>
-    const logo = document.getElementById('logo')
-    const spooky = document.getElementById('spooky')
-    logo.style.display = 'flex'
-    const interval = Math.floor(Math.random() * 30) + 30
-    console.log('Spookying in ', interval, 'seconds')
-
-    setInterval(function () {
-      logo.style.display = 'none'
-      spooky.style.display = 'flex'
-      setTimeout(function () {
-        spooky.style.display = 'none'
-        logo.style.display = 'flex'
-      }, 500)
-    }, interval * 1000)
-  </script>
 
 </body>
 
