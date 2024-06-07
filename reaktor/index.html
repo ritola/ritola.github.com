@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Reaktor</title>
     <style>
       body {
-          background-color: black;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 100vh;
-          width: 100%;
-          margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        margin: 0;
       }
       #logo {
-        background-color: black;
+        background: linear-gradient(
+          180deg,
+          rgba(255, 0, 0, 1) 0%,
+          rgba(255, 154, 0, 1) 10%,
+          rgba(208, 222, 33, 1) 20%,
+          rgba(79, 220, 74, 1) 30%,
+          rgba(63, 218, 216, 1) 45%,
+          rgba(28, 127, 238, 1) 60%,
+          rgba(95, 21, 242, 1) 70%,
+          rgba(186, 12, 248, 1) 80%,
+          rgba(251, 7, 217, 1) 90%
+        );
         justify-content: center;
         align-items: center;
         width: 100%;
@@ -24,12 +34,10 @@
         width: 50%;
       }
     </style>
-</head>
-<body>
-  <div id="logo">
-    <img src="logo.svg">
-  </div>
-
-</body>
-
+  </head>
+  <body>
+    <div id="logo">
+      <img height="100%" src="logo.svg" />
+    </div>
+  </body>
 </html>
